@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    >
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:weightSum="2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            
+        android:id="@+id/nametext"
+        app:layout_constraintTop_toBottomOf="@+id/markstext"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Name"
+            android:textSize="40px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+   
+        <EditText
+            android:id="@+id/namedit"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+   
+                </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:weightSum="2"
+       app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            
+        android:id="@+id/rolltext"
+        app:layout_constraintTop_toBottomOf="@+id/markstext"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="RollNo"
+            android:textSize="40px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+   
+        <EditText
+            android:inputType="number"
+            android:id="@+id/rolledit"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+   
+                </LinearLayout>
+      <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:weightSum="2"
+       app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            
+        android:id="@+id/markstext"
+        app:layout_constraintTop_toBottomOf="@+id/markstext"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Marks"
+            android:textSize="40px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+   
+        <EditText
+            android:inputType="number"
+            android:id="@+id/marksedit"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+   
+                </LinearLayout>
+    <Button
+        android:text="Add"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        android:id="@+id/addbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:text="Modify"
+        app:layout_constraintTop_toBottomOf="@+id/addbutton"
+        android:id="@+id/modifybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+     <Button
+        android:text="View All"
+        app:layout_constraintTop_toBottomOf="@+id/modifybutton"
+        android:id="@+id/viewallbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+     <Button
+        android:text="Delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        android:id="@+id/deletebutton"
+      
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+     <Button
+        android:text="View"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deletebutton"
+        android:id="@+id/viewbutton"
+      
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>  
+</androidx.constraintlayout.widget.ConstraintLayout>
